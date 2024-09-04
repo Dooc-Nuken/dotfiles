@@ -1,0 +1,41 @@
+# Etape 1 : 
+#   - Venir faire une update
+# 
+# Etape 2 : Installer groupe i3 app (endeavouros OS)
+#   - Installer I3 
+#   - Feh => pour le wallpaper
+#   - Thunar => pour le file browser
+#   - Nwg-look => GTK theming
+#   - Config "${HOME}"/.config/gtk-3.0/ "${HOME}"/.config/gtk-4.0/ "${HOME}"/.gtkrc-2.0  "${HOME}"/.local/share/nwg-look/gsettings
+#   - dex => Xdg autostart
+#   - dunst => Notification  
+#     - Config - "${HOME}"/.config/dunst/dunstrc
+#   - Rofi => App launcher (Avec le theme de endeavouros)
+#   - lightdm => Gestionaire de session
+#   - i3lock
+#   - i3block
+#   - i3status
+
+# Etape 3 : Installer les applications 
+#   - Kitty => Terminal
+#   - Neovim => Text editor
+#   - Brightnessctl => Pour gerer avec le script le bouton spé
+#   - Firefox => pacman
+#   - Discord => pacman
+#   - Plex => AUR NB: Venir le prendre en appimage pour eviter pacman bug ??
+#   - Keeper Password manager => AUR
+#   - obsidian => Pacman
+#   - Signal => Pacman / AUR
+#   - Lutris => Pacman
+#   - Steam => Pacman
+#   - Tachidesk => Git NB: Fire un raccourcis dans share/app/ pour dunst 
+#   - Morgen => Aur
+#   - Slack => ?
+#   - Spotify => pacman
+#   - VirtualBox => pacman
+#   - Docker => pacman
+#   - Exegol => pacman ? 
+#   - Chromium => pacman
+#   - Telegram => Aur ? 
+#   - Flameshot => Pacman
+#   - Tor => Pacman
