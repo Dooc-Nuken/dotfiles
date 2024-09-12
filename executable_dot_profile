@@ -1,0 +1,4 @@
+#export TERMINAL=xfce4-terminal
+export TERMINAL=kitty
+setxkbmap custom lafayette -option "caps:escape"
+#export QT_QPA_PLATFORMTHEME=qt5ct
