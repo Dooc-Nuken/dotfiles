@@ -1,0 +1,21 @@
+---
+- name: "Flatpak | Installer Flatpak"
+  hosts: all
+  become: yes
+  tasks:
+    - name: "Flatpak | Installer flatpak"
+      pacman:
+        name: flatpak
+        state: present
+        update_cache: yes
+
+    - name: "Flatpak | Ajouter le dépôt Flathub"
+      community.general.flatpak_remote:
+        name: "flathub"
+        flatpakrepo_url: "https://flathub.org/repo/flathub.flatpakrepo"
+        state: present
+
+    - name: "Flatpak | Redémarrer flatpak pour prendre en compte les changements"
+      command: flatpak update
+      become: true
+

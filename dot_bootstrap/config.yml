@@ -1,0 +1,87 @@
+---
+update: true
+
+base_packages:
+  - base
+  - base-devel
+  - linux
+  - linux-firmware
+  - sudo
+  - dhcpcd
+  - netctl
+  - networkmanager
+  - openssh
+  - nano
+  - vim
+  - pipewire
+  - man-db
+  - man-pages
+  - git
+  - wget
+  - reflector
+  - firewalld
+
+font_packages:
+  - awesome-terminal-fonts
+  - noto-fonts
+  - noto-fonts-emoji # for emoji
+  - ttf-dejavu
+  - ttf-roboto
+  - adobe-source-han-sans-otc-fonts # for CJK
+
+i3_packages:
+  - i3
+  - i3-lock
+  - i3block
+  - i3status
+  - picom
+  - feh
+  - thunar
+  - nwg-look
+  - dex
+  - dunst
+  - rofi
+  - lightdm
+
+other_packages:
+  - yay
+  - chezmoi
+  - firefox
+  - chromium
+  - obsidian
+  - spotify
+  - spotify-adblock-git
+  - kitty
+  - neofetch
+  - btop
+  - tmux
+  - xclip
+  - neovim
+  - brightnessctl
+  - discord
+  - signal
+  - keeper-password-manager
+  - steam
+  - lutris
+  - morgen
+  - slack
+  - virtualbox
+  - telegram
+  - flameshot
+  - tor
+
+services_list:
+  - sshd
+  - NetworkManager
+  - reflector
+
+dev_packages:
+  - visual-studio-code-bin
+  - python
+  - python-pip
+  - nodejs
+  - npm
+  - rust
+  - jre
+  - jdk
+  - go

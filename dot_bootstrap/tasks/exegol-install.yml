@@ -1,0 +1,39 @@
+---
+- name: Installer Exegol sur Arch Linux
+  hosts: all
+  become: yes  # Exécuter les commandes avec les privilèges root
+
+  tasks:
+
+    - name: Mettre à jour la base de données des paquets
+      pacman:
+        update_cache: yes
+
+    - name: Installer Docker
+      pacman:
+        name: docker
+        state: present
+
+    - name: Activer et démarrer Docker
+      systemd:
+        name: docker
+        enabled: yes
+        state: started
+
+    - name: Ajouter l'utilisateur au groupe Docker (optionnel)
+      user:
+        name: "{{ ansible_user }}"
+        groups: docker
+        append: yes
+
+    - name: Cloner le dépôt Exegol
+      git:
+        repo: https://github.com/ShutdownRepo/Exegol.git
+        dest: /opt/exegol
+
+    - name: Construire l'image Docker d'Exegol
+      command: docker build -t exegol /opt/exegol
+
+    - name: Vérifier l'installation d'Exegol
+      command: docker run --rm exegol -h
+
